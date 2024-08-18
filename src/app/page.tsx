@@ -11,13 +11,6 @@ export default function Home() {
         className="pb-12 pt-28 sm:pt-40 flex flex-col items-center 
     justify-center text-center"
       >
-        <div
-          className="mx-auto mb-4 flex max-w-fit items-center justify-center 
-      space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white 
-      px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50"
-        >
-          <p className="text-sm font-semibold text-gray-700">Hello World!</p>
-        </div>
         <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
           Create <span className="text-blue-600">flashcards</span> in seconds
         </h1>
@@ -90,7 +83,7 @@ export default function Home() {
       </div>
 
       {/* {features section} */}
-      <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-40">
+      <div className="mx-auto pb-16 mt-32 max-w-5xl sm:mt-40">
         <div className="mb-12 px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
             <h2 className="mt-2 font-bold text-4xl text-gray-900 sm:text-5xl">
