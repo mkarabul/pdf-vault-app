@@ -20,11 +20,9 @@ const permNav = [{ name: "PDF-Vault", href: "/", current: true }];
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "Dashboard", href: "#", current: false },
-  { name: "Team", href: "#", current: false },
 ];
 const userNavigation = [
-  { name: "Your Profile", href: "#" },
-  { name: "Settings", href: "#" },
+  { name: "Settings", href: "/settings" },
   { name: "Sign out", href: "#" },
 ];
 

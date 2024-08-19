@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import NewNavbar from "@/components/NewNavbar";
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider, SignedIn, SignedOut } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +27,12 @@ export default function RootLayout({
             inter.className
           )}
         >
-          <NewNavbar />
+          <SignedIn>
+            <NewNavbar />
+          </SignedIn>
+          <SignedOut>
+            <Navbar />
+          </SignedOut>
           {children}
         </body>
       </html>
