@@ -21,8 +21,7 @@ export default function Home() {
         </p>
         <Link
           className={buttonVariants({ variant: "default", className: "mt-5" })}
-          href="/dashboard"
-          target="_blank"
+          href="/sign-up"
         >
           Get Started
           <ArrowRight className="ml-2 h-5 w-5"></ArrowRight>

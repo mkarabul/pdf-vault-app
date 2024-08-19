@@ -47,7 +47,7 @@ export default function NewNavbar() {
                     className={cn(
                       item.current
                         ? "text-gray-900"
-                        : "text-gray-600 hover:border-gray-300 hover:text-gray-700",
+                        : "text-gray-600 hover:text-gray-700",
                       "inline-flex items-center pt-1 text-base font-bold rounded-lg"
                     )}
                   >
@@ -64,7 +64,7 @@ export default function NewNavbar() {
                     className={cn(
                       item.current
                         ? "text-gray-900"
-                        : "text-gray-600 hover:border-gray-300 hover:text-gray-700",
+                        : "text-gray-600 hover:text-gray-700",
                       "inline-flex items-center px-2 pt-1 text-base hover:bg-gray-100 rounded-lg"
                     )}
                   >

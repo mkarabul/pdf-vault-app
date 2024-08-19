@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import NewNavbar from "@/components/NewNavbar";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,16 +19,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={cn(
-          "min-h-screen font-sans antialiased grain relative",
-          inter.className
-        )}
-      >
-        <NewNavbar />
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body
+          className={cn(
+            "min-h-screen font-sans antialiased grain relative",
+            inter.className
+          )}
+        >
+          <NewNavbar />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
